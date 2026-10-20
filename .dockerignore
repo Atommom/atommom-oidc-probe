@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.suo
+*.user
+
+# Build artifacts
+**/bin
+**/obj
+**/out
+**/publish
+
+# Test results
+**/TestResults
+**/coverage
+
+# Documentation
+docs
+*.md
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log

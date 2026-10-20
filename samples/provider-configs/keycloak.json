@@ -1,0 +1,24 @@
+{
+  "$schema": "../provider-config.schema.json",
+  "name": "Keycloak",
+  "issuer": "https://{host}/realms/{realm}",
+  "description": "Keycloak Open Source Identity and Access Management",
+  "documentation": "https://www.keycloak.org/docs/latest/server_admin/",
+  "features": {
+    "discovery": true,
+    "jwks": true,
+    "authorizationCode": true,
+    "pkce": true,
+    "userinfo": true,
+    "refreshToken": true,
+    "idToken": true,
+    "tokenIntrospection": true,
+    "tokenRevocation": true,
+    "dynamicClientRegistration": true
+  },
+  "notes": [
+    "Replace {host} with your Keycloak server hostname",
+    "Replace {realm} with your realm name",
+    "Self-hosted OIDC provider"
+  ]
+}

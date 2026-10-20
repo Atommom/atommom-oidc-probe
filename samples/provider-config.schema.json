@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/openid-probe/provider-config.schema.json",
+  "title": "OpenID Probe Provider Configuration",
+  "description": "Configuration schema for OIDC provider presets",
+  "type": "object",
+  "required": ["name", "issuer"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the provider"
+    },
+    "issuer": {
+      "type": "string",
+      "format": "uri",
+      "description": "The issuer URL (may contain placeholders like {tenant})"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the provider"
+    },
+    "documentation": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to official documentation"
+    },
+    "features": {
+      "type": "object",
+      "description": "Supported OIDC features",
+      "properties": {
+        "discovery": { "type": "boolean", "description": "Supports OIDC Discovery" },
+        "jwks": { "type": "boolean", "description": "Supports JWKS endpoint" },
+        "authorizationCode": { "type": "boolean", "description": "Supports Authorization Code flow" },
+        "pkce": { "type": "boolean", "description": "Supports PKCE" },
+        "userinfo": { "type": "boolean", "description": "Supports UserInfo endpoint" },
+        "refreshToken": { "type": "boolean", "description": "Supports refresh tokens" },
+        "idToken": { "type": "boolean", "description": "Returns ID tokens" },
+        "tokenIntrospection": { "type": "boolean", "description": "Supports token introspection (RFC 7662)" },
+        "tokenRevocation": { "type": "boolean", "description": "Supports token revocation (RFC 7009)" },
+        "dynamicClientRegistration": { "type": "boolean", "description": "Supports dynamic client registration (RFC 7591)" }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Additional notes about using this provider"
+    }
+  }
+}

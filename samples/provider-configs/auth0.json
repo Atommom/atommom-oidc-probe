@@ -1,0 +1,22 @@
+{
+  "$schema": "../provider-config.schema.json",
+  "name": "Auth0",
+  "issuer": "https://{your-tenant}.auth0.com/",
+  "description": "Auth0 by Okta",
+  "documentation": "https://auth0.com/docs/authenticate/protocols/openid-connect-protocol",
+  "features": {
+    "discovery": true,
+    "jwks": true,
+    "authorizationCode": true,
+    "pkce": true,
+    "userinfo": true,
+    "refreshToken": true,
+    "idToken": true,
+    "tokenRevocation": true
+  },
+  "notes": [
+    "Replace {your-tenant} with your Auth0 tenant name",
+    "Issuer URL includes trailing slash",
+    "Supports custom domains"
+  ]
+}

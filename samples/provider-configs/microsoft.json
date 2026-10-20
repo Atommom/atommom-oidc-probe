@@ -1,0 +1,23 @@
+{
+  "$schema": "../provider-config.schema.json",
+  "name": "Microsoft Entra ID",
+  "issuer": "https://login.microsoftonline.com/{tenant}/v2.0",
+  "description": "Microsoft Entra ID (formerly Azure AD)",
+  "documentation": "https://learn.microsoft.com/en-us/entra/identity-platform/",
+  "features": {
+    "discovery": true,
+    "jwks": true,
+    "authorizationCode": true,
+    "pkce": true,
+    "userinfo": true,
+    "refreshToken": true,
+    "idToken": true,
+    "tokenIntrospection": false,
+    "tokenRevocation": true
+  },
+  "notes": [
+    "Replace {tenant} with your tenant ID, 'common', 'organizations', or 'consumers'",
+    "Requires App Registration in Azure Portal",
+    "Supports MSAL authentication libraries"
+  ]
+}

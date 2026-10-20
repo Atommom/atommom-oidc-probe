@@ -1,0 +1,21 @@
+{
+  "$schema": "../provider-config.schema.json",
+  "name": "Google",
+  "issuer": "https://accounts.google.com",
+  "description": "Google Identity Platform",
+  "documentation": "https://developers.google.com/identity/openid-connect/openid-connect",
+  "features": {
+    "discovery": true,
+    "jwks": true,
+    "authorizationCode": true,
+    "pkce": true,
+    "userinfo": true,
+    "refreshToken": true,
+    "idToken": true
+  },
+  "notes": [
+    "Requires OAuth 2.0 Client ID from Google Cloud Console",
+    "Supports 'openid', 'profile', 'email' scopes",
+    "ID tokens use RS256 signing algorithm"
+  ]
+}

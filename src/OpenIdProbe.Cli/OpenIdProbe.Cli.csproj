@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OpenIdProbe.Cli</RootNamespace>
+    <AssemblyName>openid-probe</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenIdProbe.Core\OpenIdProbe.Core.csproj" />
+    <ProjectReference Include="..\OpenIdProbe.Protocol\OpenIdProbe.Protocol.csproj" />
+    <ProjectReference Include="..\OpenIdProbe.Reporting\OpenIdProbe.Reporting.csproj" />
+  </ItemGroup>
+
+</Project>

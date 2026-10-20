@@ -1,0 +1,23 @@
+{
+  "$schema": "../provider-config.schema.json",
+  "name": "Okta",
+  "issuer": "https://{your-domain}.okta.com",
+  "description": "Okta Identity Cloud",
+  "documentation": "https://developer.okta.com/docs/reference/api/oidc/",
+  "features": {
+    "discovery": true,
+    "jwks": true,
+    "authorizationCode": true,
+    "pkce": true,
+    "userinfo": true,
+    "refreshToken": true,
+    "idToken": true,
+    "tokenIntrospection": true,
+    "tokenRevocation": true
+  },
+  "notes": [
+    "Replace {your-domain} with your Okta domain",
+    "Supports custom authorization servers",
+    "Default authorization server: https://{your-domain}.okta.com/oauth2/default"
+  ]
+}

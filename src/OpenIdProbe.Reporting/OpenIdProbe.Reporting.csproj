@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>OpenIdProbe.Reporting</RootNamespace>
+    <!-- Report formatting uses invariant culture -->
+    <NoWarn>$(NoWarn);CA1305</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenIdProbe.Core\OpenIdProbe.Core.csproj" />
+  </ItemGroup>
+
+</Project>

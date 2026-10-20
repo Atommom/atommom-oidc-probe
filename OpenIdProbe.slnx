@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OpenIdProbe.Cli/OpenIdProbe.Cli.csproj" />
+    <Project Path="src/OpenIdProbe.Core/OpenIdProbe.Core.csproj" />
+    <Project Path="src/OpenIdProbe.Protocol/OpenIdProbe.Protocol.csproj" />
+    <Project Path="src/OpenIdProbe.Reporting/OpenIdProbe.Reporting.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OpenIdProbe.Core.Tests/OpenIdProbe.Core.Tests.csproj" />
+    <Project Path="tests/OpenIdProbe.IntegrationTests/OpenIdProbe.IntegrationTests.csproj" />
+    <Project Path="tests/OpenIdProbe.Protocol.Tests/OpenIdProbe.Protocol.Tests.csproj" />
+  </Folder>
+</Solution>
